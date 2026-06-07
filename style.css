@@ -94,9 +94,11 @@ nav a:hover{
 }
 
 .profile img{
-    width:180px;
-    height:180px;
-
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+}
     border-radius:50%;
 
     object-fit:cover;
@@ -106,4 +108,112 @@ nav a:hover{
     box-shadow:
     0 0 20px #8b5cf6,
     0 0 40px #8b5cf6;
+}
+.projects{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.card{
+    width:280px;
+
+    padding:20px;
+
+    background:rgba(255,255,255,0.08);
+
+    border-radius:15px;
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+
+    box-shadow:0 0 20px rgba(139,92,246,0.5);
+}
+
+.card h3{
+    color:#8b5cf6;
+}
+.social-buttons{
+    margin-top:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+}
+
+.social-buttons a{
+    text-decoration:none;
+
+    color:white;
+
+    padding:10px 20px;
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,0.1);
+
+    border:1px solid rgba(255,255,255,0.2);
+
+    transition:0.3s;
+}
+
+.social-buttons a:hover{
+    background:#8b5cf6;
+
+    transform:translateY(-3px);
+}
+.social-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:15px;
+}
+
+.social-buttons a{
+    background:rgba(255,255,255,0.1);
+    color:white;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,0.2);
+    transition:all 0.3s ease;
+}
+
+.social-buttons a:hover{
+    background:#8b5cf6;
+    transform:translateY(-3px);
+}
+button{
+    margin-bottom:20px;
+}
+.hero{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.skills-list{
+    list-style:none;
+    padding:0;
+    margin:20px 0;
+}
+
+.skills-list li{
+    display:inline-block;
+    margin:10px;
+    padding:10px 20px;
+    background:rgba(255,255,255,0.1);
+    border-radius:10px;
+    border:1px solid rgba(255,255,255,0.2);
+}
+h1{
+    text-shadow: 0 0 20px rgba(139,92,246,0.8);
 }

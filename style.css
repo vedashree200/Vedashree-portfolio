@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
     background: linear-gradient(
 135deg,
@@ -11,8 +14,33 @@ body {
     padding: 50px;
 }
 
-h1 {
-    color: #8b5cf6;
+h1{
+    font-size:60px;
+    font-weight:bold;
+
+    background:linear-gradient(
+        90deg,
+        #8b5cf6,
+        #06b6d4,
+        #ec4899,
+        #8b5cf6
+    );
+
+    background-size:300%;
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    animation:glow 5s linear infinite;
+}
+@keyframes glow{
+    0%{
+        background-position:0%;
+    }
+
+    100%{
+        background-position:300%;
+    }
 }
 button {
     background-color: #8b5cf6;
@@ -216,4 +244,82 @@ button{
 }
 h1{
     text-shadow: 0 0 20px rgba(139,92,246,0.8);
+}
+.contact-section{
+    margin-top:30px;
+    padding:20px;
+    background:rgba(255,255,255,0.08);
+    border-radius:15px;
+}
+
+.contact-section p{
+    margin:10px 0;
+    font-size:18px;
+}
+.social-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+}
+
+.social-buttons a{
+    padding:12px 24px;
+    border-radius:10px;
+    background:rgba(255,255,255,0.1);
+    text-decoration:none;
+    color:white;
+}
+.contact-section{
+    max-width:500px;
+    margin:30px auto;
+}
+.resume-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 25px;
+    background:#8b5cf6;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+}
+footer{
+    margin-top:50px;
+    padding:20px;
+    text-align:center;
+    color:#ccc;
+}
+.projects-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+.projects-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+footer{
+    margin-top:50px;
+    padding:20px;
+    text-align:center;
+    color:#ccc;
+    border-top:1px solid rgba(255,255,255,0.2);
+}
+.card{
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(168,85,247,0.5);
+}
+.profile img{
+    transition: 0.3s;
+}
+
+.profile img:hover{
+    transform: scale(1.05);
 }
